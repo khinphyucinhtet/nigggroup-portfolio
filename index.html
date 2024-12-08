@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIG Portfolio</title>
+  <meta name="description" content="NIG Portfolio showcases innovative digital solutions in web development, app creation, and database management.">
+  <meta name="keywords" content="NIG Portfolio, Web Development, App Creation, Database Management, Team Projects">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <!-- Logo and Brand -->
+      <div class="navbar-brand">
+        <img src="1.png" alt="Logo" class="logo">
+        <span>NIG's Portfolio</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="navbar-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#team">About Us</a></li>
+        <li><a href="#OurProjects">Our Project</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content (for demonstration) -->
+  <section id="home" class="home-section">
+  <div class="home-content">
+    <h1 class="landing-text">
+      Crafting innovative digital solutions in web development, app creation, and database management.
+      <span>We blend creativity with technical expertise to deliver tailored results that exceed client expectations.</span>
+    </h1>
+  </div>
+</section>
+  <section id="team" class="team-section">
+  <h2 class="h2-text" >Meet Our Team</h2>
+  <ul class="team-list">
+       <!-- Card 1 -->
+    <li class="team-card">
+      <div class="team-photo">
+        <img src="./Pinky.jpg" alt="Pinky">
+      </div>
+      <h3>Pinky</h3>
+      <p>Web Developer</p>
+    </li>
+
+    <!-- Card 2 -->
+    <li class="team-card">
+      <div class="team-photo">
+        <img src="./Shihab.jpg" alt="Shihab">
+      </div>
+      <h3>Shihab</h3>
+      <p>UI/UX Designer</p>
+    </li>
+
+    <!-- Card 3 -->
+    <li class="team-card">
+      <div class="team-photo">
+        <img src="./Abdullah.jpg" alt="Abdullah">
+      </div>
+      <h3>Abdullah</h3>
+      <p>Backend Engineer</p>
+    </li>
+
+    <!-- Card 4 -->
+    <li class="team-card">
+      <div class="team-photo">
+        <img src="./Vyan.jpg" alt="Vyan">
+      </div>
+      <h3>Vyan</h3>
+      <p>Database Manager</p>
+    </li>
+
+    <!-- Card 5 -->
+    <li class="team-card">
+      <div class="team-photo">
+        <img src="./Faz.jpg" alt="Faz">
+      </div>
+      <h3>Faz</h3>
+      <p>Mobile App Developer</p>
+    </li>
+
+    <!-- Card 6 -->
+    <li class="team-card">
+      <div class="team-photo">
+        <img src="./Danish.jpg" alt="Danish">
+      </div>
+      <h3>Danish</h3>
+      <p>AI Specialist</p>
+    </li>
+  </ul>
+</section>
+<section id="OurProjects" class="projects-section">
+  <h1>Our Projects</h1>
+  <div class="video-container">
+    <video src="./WhatsApp Video 2024-10-23 at 14.36.15_17b0b46c.mp4" controls></video>
+  </div>
+  <p>
+    A 2-minute Lego video set to the powerful song <strong>Legends Never Die</strong>.
+    <br>It brings Lego characters to life in a cinematic story of heroism
+    <br>and adventure, offering a fun and epic tribute to timeless legends.
+  </p>
+</section>
+
+</body>
+<footer id="contact" class="footer">
+
+
+  <div class="left-section">
+    <h1>Let's Talk</h1>
+    <p>
+      Every project starts with a chat. <br>Danish leads our client conversations
+      <br>and will be happy to discuss your project. <br>He will also pull in the right 
+      <br>people from the team when needed.
+    </p>
+
+    <!-- Button to trigger the form -->
+<button id="openForm" class="openFormButton">Tell us about your project</button>
+
+<!-- Popup Form -->
+<div id="popupForm" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Tell Us About Your Project</h2>
+    <form>
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="description">Project Description</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+  </div>
+
+  <div class="right-section">
+    <div class="contact-info">
+      <div>
+        <strong>Email</strong>
+        <p>NigGroup@gmail.com</p>
+      </div>
+      <div>
+        <strong>Phone</strong>
+        <p>(+60) 123456789</p>
+      </div>
+      <div>
+        <strong>Address</strong>
+        <p>1 Paya Lebar Street<br>#04-01, Paya Lebar Quarter<br>Malaysia, 40100</p>
+      </div>
+    </div>
+
+    <div class="social-icons">
+      <a href="#" class="social-icon">&#x1F426;</a> <!-- Twitter -->
+      <a href="#" class="social-icon">&#x1F464;</a> <!-- LinkedIn -->
+      <a href="#" class="social-icon">&#x1F47D;</a> <!-- Github -->
+      <a href="#" class="social-icon">&#x1F4F1;</a> <!-- Phone -->
+    </div>
+  </div>
+</footer>
+
+</html>

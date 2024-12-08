@@ -1,0 +1,537 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding-top: 100px;
+    /* Prevent content from hiding behind the sticky navbar */
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 2rem 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Container: Centers the content */
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/* Navbar Brand and Logo */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+}
+
+.navbar-brand span {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navbar Links */
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 4rem;
+}
+
+
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: #ff6f61;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+/* Demo Content Section */
+
+/* Home Section */
+/* Home Section */
+.home-section {
+    min-height: 100vh;
+    /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    background: url('./pexels-pixabay-417273.jpg') no-repeat center center;
+    /* Add background image */
+    background-size: cover;
+    /* Make the background cover the entire section */
+    background-attachment: fixed;
+    /* Optional: Makes the background fixed when scrolling */
+    color: white;
+}
+
+/* Home Content */
+.home-content {
+    position: relative;
+    z-index: 1;
+    /* Ensure text appears above the background */
+    text-align: center;
+}
+
+/* Landing Text */
+.landing-text {
+    font-size: clamp(2rem, 5vw, 4rem);
+    /* Responsive font size */
+    font-weight: 700;
+    line-height: 1.4;
+    max-width: 900px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    /* Add shadow for better contrast */
+}
+
+/* Sub-text in Landing */
+.landing-text span {
+    display: block;
+    font-size: clamp(1rem, 3vw, 2rem);
+    /* Responsive font size for subtext */
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+/* Remove image tag style */
+.home-image {
+    display: none;
+    /* Remove old image element */
+}
+
+/* Team Section */
+/* Team Section */
+.team-section {
+    padding: 100px 2rem 400px;
+    text-align: center;
+    background-color: #f9fbfc71;
+}
+
+
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    /* Adds space between the title and cards */
+    text-align: center;
+    width: 100%;
+    height: 350px;
+    /* Ensure it spans the full width */
+    color: #080808;
+}
+
+
+
+/* Team List */
+.team-list {
+    display: flex;
+    /* Flexbox layout */
+    flex-wrap: wrap;
+    /* Allow wrapping */
+    justify-content: center;
+    /* Center cards horizontally */
+    gap: 2rem;
+    /* Space between cards */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* Remove default list styling */
+}
+
+/* Team Card */
+.team-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+    width: 280px;
+    /* Card width */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Profile Picture */
+.team-photo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+    /* Center the photo */
+    border-radius: 50%;
+    /* Circular frame */
+    overflow: hidden;
+    border: 4px solid #ddd;
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Name and Title */
+.team-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.team-card p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Footer Section */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    /* Responsive wrap */
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: #333;
+    color: white;
+    gap: 2rem;
+}
+
+/* Left Section */
+.footer .left-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer .left-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer .left-section p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.footer .left-section button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer .left-section button:hover {
+    background-color: #e85a50;
+}
+
+/* Right Section */
+.footer .right-section {
+    flex: -2;
+    min-width: 300px;
+}
+
+.footer .contact-info div {
+    margin-bottom: 1.5rem;
+}
+
+.footer .contact-info strong {
+    font-size: 1.1rem;
+}
+
+.footer .contact-info p {
+    margin: 0.5rem 0 0;
+    line-height: 1.4;
+}
+
+/* Social Icons */
+.footer .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.footer .social-icon {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .social-icon:hover {
+    color: #ff6f61;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer .left-section,
+    .footer .right-section {
+        flex: none;
+        min-width: auto;
+    }
+
+    .footer .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.projects-section h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.video-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 56.25%; /* Aspect ratio 16:9 */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: black; /* Fallback color for older browsers */
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Text Content */
+.projects-section p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 2rem auto 0;
+}
+
+.projects-section p strong {
+  color: #ff6f61;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-section h1 {
+    font-size: 2rem;
+  }
+
+  .projects-section p {
+    font-size: 1rem;
+  }
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.projects-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Updated Video Container */
+.video-container {
+    max-width: 900px;
+    /* Increased max-width for a wider appearance */
+    margin: 0 auto;
+    position: relative;
+    padding-top: 50%;
+    /* Adjusted aspect ratio closer to a wider rectangle */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    /* Fallback background */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Text Content */
+.projects-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 2rem auto 0;
+}
+
+.projects-section p strong {
+    color: #ff6f61;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-section h1 {
+        font-size: 2rem;
+    }
+
+    .projects-section p {
+        font-size: 1rem;
+    }
+
+    /* Adjust video width on smaller screens */
+    .video-container {
+        max-width: 100%;
+        padding-top: 56.25%;
+        /* Default back to 16:9 on small devices */
+    }
+}
+
+
+/* Popup Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #080808;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #080808;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #e85a50;
+}
+
+
+.content {
+    padding: 2rem;
+}
+
+section {
+    padding: 4rem 2rem;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    height: auto;
+    /* Allow the section to adjust height automatically */
+}
+
+
